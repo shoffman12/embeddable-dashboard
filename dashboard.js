@@ -29,7 +29,7 @@ function loadUseageDash() {
 };
 
 function getEmbeddableDashboard(options) {
-
+    console.log("Hitting embeddable dashboard API");
 
     var merged = $.extend(true, {}, {
             type: "POST",
@@ -46,6 +46,7 @@ function getEmbeddableDashboard(options) {
         options);
 
     output = $.ajax(merged);
+    console.log(output);
 
 
 }
